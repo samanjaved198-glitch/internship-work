@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBite - Food Delivery</title>
+  <link rel="stylesheet" href="3.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TasteBite</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Delicious Food, Delivered Fresh</h1>
+    <p>Order your favorite meals online and enjoy at home.</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </section>
+
+    <!-- Menu Section -->
+  <section id="menu" class="section">
+    <h2>Our Special Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://assets.digitalcontent.marksandspencer.app/image/upload/w_2560,q_auto,c_fill,f_auto/9a27a789b31ee3a3a5e6b12a7f65b0e1.jpg" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p>Juicy grilled burger with cheese and fresh veggies.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.deliveryhero.io/image/fd-pk/LH/w9zx-listing.jpg" alt="Pizza">
+        <h3>Italian Pizza</h3>
+        <p>Hot cheesy pizza with fresh toppings.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://s.lightorangebean.com/media/20240914160809/Spicy-Penne-Pasta_-done.png" alt="Pasta">
+        <h3>Classic Pasta</h3>
+        <p>Creamy pasta made with authentic Italian recipe.</p>
+      </div>
+      <!-- NEW ITEMS -->
+      <div class="menu-item">
+        <img src="https://cdn.foodstorm.com/e5184b75632349358c9031c2ef988e6b/images/0ac13014da6f4fd1adee7eb7fc2f70eb_1080w.jpg" alt="Sushi">
+        <h3>Sushi Platter</h3>
+        <p>Fresh sushi rolls with wasabi and soy sauce.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.penzeys.com/media/4517/beef-tacos_main.jpg" alt="Tacos">
+        <h3>Mexican Tacos</h3>
+        <p>Spicy beef tacos served with salsa and cheese.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://static.toiimg.com/thumb/54677722.cms?width=1200&height=900" alt="Ice Cream">
+        <h3>Vanilla Ice Cream</h3>
+        <p>Cold and creamy dessert with rich vanilla flavor.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Order Section -->
+  <!-- Place Order Section -->
+<section id="order" class="section">
+  <h2>Place Your Order</h2>
+  <form id="orderForm" class="order-form">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="food">Select Food</label>
+      <select id="food" required>
+        <option value="">-- Choose a Dish --</option>
+        <option value="Burger">Cheese Burger</option>
+        <option value="Pizza">Italian Pizza</option>
+        <option value="Pasta">Classic Pasta</option>
+        <option value="Sushi">Sushi Platter</option>
+        <option value="Tacos">Mexican Tacos</option>
+        <option value="Ice Cream">Vanilla Ice Cream</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" min="1" max="10" value="1" required>
+    </div>
+
+    <button type="submit" class="btn">Place Order</button>
+  </form>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: support@tastebite.com</p>
+    <p>Phone: +923221234567</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TasteBite. All rights reserved.</p>
+  </footer>
+
+  <script src="3.js"></script>
+</body>
+</html>
